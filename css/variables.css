@@ -1,0 +1,43 @@
+:root {
+    /* --glow-text: 0px 0px 10px cyan, 0px 0px 20px cyan, 0px 0px 40px cyan, 0px 0px 80px cyan; */
+    --glow-text: 0px 0px 2px #00ffff, 0px 0px 4px cyan, 0px 0px 8px cyan, 0px 0px 16px cyan;
+
+    --border-link: 2px solid rgba(17, 108, 243, 0.18);
+
+    --box-shadow-menu: 0px 0px 30px rgba(8, 20, 122, 0.37);
+
+    --hover-focus-color: rgb(233, 110, 10);
+
+    --hover-focus-background-color: white;
+
+    --visited-color: rgb(233, 110, 10);
+
+    --a-color: rgba(233, 154, 9, 0.9);
+
+    --body-background-color: rgb(56, 8, 133);
+
+    /* --logo-color: rgba(180, 105, 200, 0.9);
+
+    --logo-textshadou: 2px 2px 1px rgba(226, 105, 230, 0.8); */
+
+    --text-color: rgb(11, 6, 250);
+
+    --color-background-a: rgba(245, 120, 47, 1);
+
+    --text-shadow-hover-a:
+        0px 0px 2px #0c7b85, 0px 0px 3px #0c7b85, 0px 0px 3px #0c7b85
+        0px 0px 3px #0c7b85;
+
+    --button-gradient: linear-gradient(180deg, #16d9eb , #0c7b85 );
+    --button-hover-gradient: linear-gradient(-180deg, #0c7b85 , #16d9eb );
+
+    --bg-color: #eee8aa;
+
+    --section-color: #bdb76b;
+    
+    --title-fonts: "Ruslan Display", sans-serif;
+
+    --shadow-section: 0px 4px 4px #272401;
+    --shadow-hover: 0px 1px 1px #272401;
+
+}

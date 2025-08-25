@@ -1,0 +1,1076 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* line-height: 1.5; */
+    font-size: 22px;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    min-height: 100vh;
+    font-family: "Monomakh", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(52, 73, 94);
+}
+
+a {
+    text-decoration: none;
+    color: var(--a-color);
+    font-size: 1rem;
+    transition: all 0.3s ease 0.1s;
+}
+
+a:visited {
+    color: var(--visited-color);
+}
+
+a:hover {
+    color: var(--hover-focus-color);
+    text-shadow: var(--text-shadow-hover-a);
+}
+
+a:focus-visible {
+    color: var(--hover-focus-color);
+    text-shadow: var(--text-shadow-hover-a);
+}
+
+.contact li:hover,
+.footer ul li:hover,
+.navigation a:hover {
+    background-color: var(--hover-focus-background-color);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.background-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: scale(0.2);
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease 0.2s;
+}
+
+.modal {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    max-height: 80%;
+    padding: 2rem;
+    margin: 2rem 1rem;
+    z-index: 101;
+    background-color: rgb(247, 248, 214);
+    overflow: auto;
+    transform: scale(0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease 0.6s;
+    overscroll-behavior: contain;
+}
+
+.modal .button-close-modal {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.modal__content {
+    padding: 2rem 1rem 1rem;
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    color: rgba(5, 5, 5, 0.8);
+}
+.modal__content h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-shadow: 9px 5px 5px rgba(66, 68, 90, 1);
+}
+
+.visibility {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+.container {
+    width: 100%;
+    max-width: 2000px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(135, 206, 235, 0);
+}
+
+.header {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    min-height: 70px;
+    border-radius: 3rem;
+    backdrop-filter: blur(30px);
+    background-color: rgba(245, 239, 239, 0.3);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+.header > a {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: auto;
+    margin-left: 2.5rem;
+    cursor: pointer;
+}
+
+.header > a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.contact {
+    display: flex;
+    column-gap: 2rem;
+    margin-right: 2.5rem;
+}
+
+.contact li {
+    display: flex;
+    min-width: 7rem;
+    padding: 0.2rem;
+    border: var(--border-link);
+    box-shadow: var(--box-shadow-menu);
+    border-radius: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact a {
+    width: 100%;
+    text-align: center;
+    column-gap: 1rem;
+}
+
+.contact_mobil {
+    width: 7rem;
+    justify-content: space-around;
+    margin-right: 1rem;
+    display: none;
+}
+
+.contact_mobil li {
+    width: 2rem;
+    height: 2rem;
+}
+
+.contact_mobil a {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.contact_mobil img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.navigation {
+    text-align: center;
+    margin: 0.6rem 0;
+}
+
+.section-title h1 {
+    text-align: center;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: var(--glow-text);
+    font-size: 2.2rem;
+    letter-spacing: 0.2rem;
+}
+.tabs-controls h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    color: aqua;
+    cursor: pointer;
+}
+
+.tabs-controls h2:hover {
+    color: white;
+}
+.section-container {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 75px;
+    letter-spacing: 0.2rem;
+}
+
+.tabs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.tabs-item .tabs-item-content img {
+    width: 50px;
+    height: 50px;
+}
+
+.section-title-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title-icon h4 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    padding-top: 0.3rem;
+    text-align: center;
+}
+
+.tabs-body {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.tabs-controls {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.tabs-item {
+    padding: 1rem 1rem;
+    background-color: #f7f7f7;
+    color: #000c40;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.tabs-item-active {
+    background-color: #2d2113;
+    color: #fff;
+}
+
+.tabs-item .tabs-item-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 2;
+}
+
+.tabs-item::before {
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: 150%;
+    width: 250%;
+    height: 250%;
+    border-radius: 100%;
+    background-color: #000c40;
+    transition: all 0.4s ease;
+    z-index: 0;
+}
+
+.tabs-item:hover::before {
+    left: -50%;
+    top: -50%;
+    border-radius: 100%;
+}
+
+.tabs-item .tabs-item-content:hover {
+    color: white;
+}
+
+.tabs-body {
+    flex: 1 1 500px;
+    padding: 40px;
+    width: 100%;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    position: relative;
+}
+
+.tabs-body-item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    transition: all 0.5s ease;
+    transform: scale(0.75);
+    opacity: 0;
+    display: none;
+}
+
+.tabs-body-item-active {
+    display: flex !important;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.container-flip-card {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, 16rem);
+    grid-template-columns: repeat(auto-fill, 12rem);
+    grid-auto-columns: 12rem;
+    grid-auto-rows: 16rem;
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+.container-flip-card section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.container-flip-card section .photocard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in;
+}
+
+.container-flip-card section:hover .photocard {
+    transform: rotateY(180deg);
+    transition: all 1s ease-in;
+}
+
+.container-flip-card section .photocard .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.6rem;
+}
+
+.container-flip-card section .photocard .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg) translateZ(1px);
+    border-radius: 0.6rem;
+}
+
+/* карточки ресурс */
+.background-resource1 {
+    background: url(../img-work-card-2/front-card-resource-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource2 {
+    background: url(../img-work-card-2/front-card-resource-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource3 {
+    background: url(../img-work-card-2/front-card-resource-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource4 {
+    background: url(../img-work-card-2/front-card-resource-4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource5 {
+    background: url(../img-work-card-2/front-card-resource-5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource6 {
+    background: url(../img-work-card-2/front-card-resource-6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource7 {
+    background: url(../img-work-card-2/front-card-resource-7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource8 {
+    background: url(../img-work-card-2/front-card-resource-8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource9 {
+    background: url(../img-work-card-2/front-card-resource-9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource10 {
+    background: url(../img-work-card-2/front-card-resource-10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource11 {
+    background: url(../img-work-card-2/front-card-resource-11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource12 {
+    background: url(../img-work-card-2/front-card-resource-12.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.background-resource13 {
+    background: url(../img-work-card-2/front-card-resource-13.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource14 {
+    background: url(../img-work-card-2/front-card-resource-14.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource15 {
+    background: url(../img-work-card-2/front-card-resource-15.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource16 {
+    background: url(../img-work-card-2/front-card-resource-16.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource17 {
+    background: url(../img-work-card-2/front-card-resource-17.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource18 {
+    background: url(../img-work-card-2/front-card-resource-18.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource19 {
+    background: url(../img-work-card-2/front-card-resource-19.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource20 {
+    background: url(../img-work-card-2/front-card-resource-20.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource21 {
+    background: url(../img-work-card-2/front-card-resource-21.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource22 {
+    background: url(../img-work-card-2/front-card-resource-22.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource23 {
+    background: url(../img-work-card-2/front-card-resource-23.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource24 {
+    background: url(../img-work-card-2/front-card-resource-24.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-resource25 {
+    background: url(../img-work-card-2/front-card-resource-25.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* карточки портрет */
+.background-portrait1 {
+    background: url(../img-work-card-2/front-card-portret-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait2 {
+    background: url(../img-work-card-2/front-card-portret-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait3 {
+    background: url(../img-work-card-2/front-card-portret-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait4 {
+    background: url(../img-work-card-2/front-card-portret-4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait5 {
+    background: url(../img-work-card-2/front-card-portret-5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait6 {
+    background: url(../img-work-card-2/front-card-portret-6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait7 {
+    background: url(../img-work-card-2/front-card-portret-7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait8 {
+    background: url(../img-work-card-2/front-card-portret-8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait9 {
+    background: url(../img-work-card-2/front-card-portret-9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait10 {
+    background: url(../img-work-card-2/front-card-portret-10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait11 {
+    background: url(../img-work-card-2/front-card-portret-11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait12 {
+    background: url(../img-work-card-2/front-card-portret-12.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait13 {
+    background: url(../img-work-card-2/front-card-portret-13.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait14 {
+    background: url(../img-work-card-2/front-card-portret-14.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait15 {
+    background: url(../img-work-card-2/front-card-portret-15.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait16 {
+    background: url(../img-work-card-2/front-card-portret-16.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait17 {
+    background: url(../img-work-card-2/front-card-portret-17.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait18 {
+    background: url(../img-work-card-2/front-card-portret-18.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait19 {
+    background: url(../img-work-card-2/front-card-portret-19.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait20 {
+    background: url(../img-work-card-2/front-card-portret-20.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait21 {
+    background: url(../img-work-card-2/front-card-portret-21.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait22 {
+    background: url(../img-work-card-2/front-card-portret-22.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait23 {
+    background: url(../img-work-card-2/front-card-portret-23.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait24 {
+    background: url(../img-work-card-2/front-card-portret-24.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-portrait25 {
+    background: url(../img-work-card-2/front-card-portret-25.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* карточки сказка */
+.background-fable1 {
+    background: url(../img-work-card/front-card-fable-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable2 {
+    background: url(../img-work-card/front-card-fable-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable3 {
+    background: url(../img-work-card/front-card-fable-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable4 {
+    background: url(../img-work-card/front-card-fable-4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable5 {
+    background: url(../img-work-card/front-card-fable-5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable6 {
+    background: url(../img-work-card/front-card-fable-6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable7 {
+    background: url(../img-work-card/front-card-fable-7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable8 {
+    background: url(../img-work-card/front-card-fable-8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable9 {
+    background: url(../img-work-card/front-card-fable-9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable10 {
+    background: url(../img-work-card/front-card-fable-10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable11 {
+    background: url(../img-work-card/front-card-fable-11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable12 {
+    background: url(../img-work-card/front-card-fable-12.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable13 {
+    background: url(../img-work-card/front-card-fable-13.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable14 {
+    background: url(../img-work-card/front-card-fable-14.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable15 {
+    background: url(../img-work-card/front-card-fable-15.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable16 {
+    background: url(../img-work-card/front-card-fable-16.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable17 {
+    background: url(../img-work-card/front-card-fable-17.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable18 {
+    background: url(../img-work-card/front-card-fable-18.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable19 {
+    background: url(../img-work-card/front-card-fable-19.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable20 {
+    background: url(../img-work-card/front-card-fable-20.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable21 {
+    background: url(../img-work-card/front-card-fable-21.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable22 {
+    background: url(../img-work-card/front-card-fable-22.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable23 {
+    background: url(../img-work-card/front-card-fable-23.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable24 {
+    background: url(../img-work-card/front-card-fable-24.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-fable25 {
+    background: url(../img-work-card/front-card-fable-25.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* карточки травма */
+.background-injury1 {
+    background: url(../img-work-card/front-card-injury-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury2 {
+    background: url(../img-work-card/front-card-injury-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury3 {
+    background: url(../img-work-card/front-card-injury-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury4 {
+    background: url(../img-work-card/front-card-injury-4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury5 {
+    background: url(../img-work-card/front-card-injury-5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury6 {
+    background: url(../img-work-card/front-card-injury-6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury7 {
+    background: url(../img-work-card/front-card-injury-7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury8 {
+    background: url(../img-work-card/front-card-injury-8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury9 {
+    background: url(../img-work-card/front-card-injury-9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury10 {
+    background: url(../img-work-card/front-card-injury-10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury11 {
+    background: url(../img-work-card/front-card-injury-11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury12 {
+    background: url(../img-work-card/front-card-injury-12.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury13 {
+    background: url(../img-work-card/front-card-injury-13.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury14 {
+    background: url(../img-work-card/front-card-injury-14.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury15 {
+    background: url(../img-work-card/front-card-injury-15.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury16 {
+    background: url(../img-work-card/front-card-injury-16.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury17 {
+    background: url(../img-work-card/front-card-injury-17.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury18 {
+    background: url(../img-work-card/front-card-injury-18.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury19 {
+    background: url(../img-work-card/front-card-injury-19.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury20 {
+    background: url(../img-work-card/front-card-injury-20.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury21 {
+    background: url(../img-work-card/front-card-injury-21.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury22 {
+    background: url(../img-work-card/front-card-injury-22.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury23 {
+    background: url(../img-work-card/front-card-injury-23.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury24 {
+    background: url(../img-work-card/front-card-injury-24.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background-injury25 {
+    background: url(../img-work-card/front-card-injury-25.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.background {
+    background-size: 100% 100%;
+}
+
+.container-flip-card section .photocard .background div h3 {
+    color: white;
+    font-size: 1.3rem;
+    /* letter-spacing: 2px; */
+    text-transform: uppercase;
+}
+.container-flip-card section .photocard .background div p {
+    color: azure;
+    font-size: 1.2rem;
+}
+
+.card-name {
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    color: rgb(133, 138, 138);
+}
+.footer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 1.5rem auto;
+}
+
+.footer ul {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    padding: 0;
+    column-gap: 1rem;
+}
+
+.footer li {
+    display: flex;
+    height: auto;
+    min-width: 8rem;
+    border: var(--border-link);
+    box-shadow: var(--box-shadow-menu);
+    border-radius: 3rem;
+    text-align: center;
+    padding: 0.2rem;
+    margin: 0.5rem;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.footer li a {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1100px) {
+    * {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    * {
+        font-size: 18px;
+    }
+    .container {
+        width: 100%;
+    }
+    .header > a {
+        margin-left: 1rem;
+    }
+    .contact {
+        column-gap: 1rem;
+        margin-right: 1rem;
+    }
+    .container-flip-card {
+        display: grid;
+        grid-template-rows: repeat(3, 16rem);
+        grid-template-columns: repeat(auto-fill, 13rem);
+        grid-auto-columns: 13rem;
+        grid-auto-rows: 16rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    * {
+        font-size: 16px;
+    }
+    .contact li {
+        min-width: auto;
+    }
+    .container-flip-card {
+        display: grid;
+        grid-template-rows: repeat(3, 16rem);
+        grid-template-columns: repeat(auto-fill, 12rem);
+        grid-auto-columns: 12rem;
+        grid-auto-rows: 16rem;
+    }
+
+    .footer li {
+        min-width: 7rem;
+        column-gap: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    * {
+        font-size: 14px;
+    }
+
+    /* .header > a {
+        font-size: 1.8rem;
+        margin-left: 1rem;
+    } */
+
+    .contact {
+        display: none;
+    }
+
+    .contact_mobil {
+        display: flex;
+    }
+
+    .contact_mobil li {
+        padding: 0;
+    }
+
+    .container-flip-card {
+        display: grid;
+        grid-template-rows: repeat(3, 20rem);
+        grid-template-columns: repeat(auto-fill, 19rem);
+        grid-auto-columns: 19rem;
+        grid-auto-rows: 20rem;
+    }
+
+    .footer ul {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .container-flip-card {
+        display: grid;
+        grid-template-rows: repeat(3, 17rem);
+        grid-template-columns: repeat(auto-fill, 14rem);
+        grid-auto-columns: 14rem;
+        grid-auto-rows: 17rem;
+    }
+}

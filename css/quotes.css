@@ -1,0 +1,354 @@
+* {
+   margin: 0;
+   padding: 0;
+   line-height: 1.5;
+   font-size: 22px;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Monomakh", serif;
+   font-weight: 400;
+   font-style: normal;
+   max-width: 100%;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-image: linear-gradient(
+      rgba(13, 120, 243, 0.8),
+      rgba(18, 196, 228, 0.8),
+      rgba(135, 216, 248, 0.8),
+      rgba(173, 242, 245, 0.8),
+      rgba(135, 216, 248, 0.8),
+      rgba(18, 196, 228, 0.8),
+      rgba(13, 120, 243, 0.8)
+   );
+}
+
+a {
+   text-decoration: none;
+   color: var(--a-color);
+   font-size: 1rem;
+   transition: all 0.3s ease 0.1s;
+}
+
+a:visited {
+   color: var(--visited-color);
+}
+
+a:hover {
+   color: var(--hover-focus-color);
+   text-shadow: var(--text-shadow-hover-a);
+}
+
+a:focus-visible {
+   color: var(--hover-focus-color);
+   text-shadow: var(--text-shadow-hover-a);
+}
+
+.contact li:hover,
+.footer ul li:hover,
+.navigation a:hover {
+   background-color: var(--hover-focus-background-color);
+}
+
+ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+.container {
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.header {
+   width: 90%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 2rem auto;
+   min-height: 70px;
+   border-radius: 3rem;
+   backdrop-filter: blur(30px);
+   background-color: rgba(245, 239, 239, 0.3);
+   box-shadow: 0px 0px 30px rgba(22, 22, 22, 0.8);
+   border: 2px solid rgba(90, 87, 87, 0.3);
+}
+
+.header > a {
+   width: 2.5rem;
+   height: 2.5rem;
+   margin-right: auto;
+   margin-left: 2.5rem;
+   cursor: pointer;
+}
+
+.header > a img {
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+
+.contact {
+   display: flex;
+   margin-right: 2.5rem;
+   gap: 2.5rem;
+}
+
+.contact li {
+   display: flex;
+   min-width: 7rem;
+   padding: 0.2rem;
+   border: var(--border-link);
+   box-shadow: var(--box-shadow-menu);
+   border-radius: 3rem;
+}
+
+.contact a {
+   width: 100%;
+   text-align: center;
+}
+
+.contact_mobil {
+   width: 7rem;
+   justify-content: space-around;
+   margin-right: 1rem;
+   display: none;
+}
+
+.contact_mobil li {
+   width: 2rem;
+   height: 2rem;
+}
+
+.contact_mobil a {
+   display: block;
+   width: 2rem;
+   height: 2rem;
+}
+
+.contact_mobil img {
+   width: 2rem;
+   height: 2rem;
+}
+
+.navigation {
+   text-align: center;
+   margin: 0.6rem 0;
+}
+
+h1 {
+   text-align: center;
+   padding: 3rem 1rem;
+   text-transform: uppercase;
+   color: white;
+   text-shadow: var(--glow-text);
+   font-size: 2.2rem;
+   letter-spacing: 0.2rem;
+}
+
+.quotes-wrapper {
+   box-sizing: border-box;
+   display: grid;
+   width: 90%;
+   min-height: 100vh;
+   padding: 1rem;
+   border-radius: 0.5rem;
+   grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+   grid-template-rows: repeat(auto-fill, minmax(13rem, 15rem));
+   grid-auto-columns: minmax(13rem, 1fr);
+   grid-auto-rows: minmax(13rem, 15rem);
+   grid-gap: 1rem;
+   justify-content: center;
+   background-color: rgba(30, 10, 247, 0.3);
+}
+
+.quotes-card {
+   display: flex;
+   justify-content: center;
+   font-family: "Monomakh", serif;
+   font-weight: 400;
+   font-style: normal;
+   background-color: bisque;
+   background-image: url(../img/notebook.jpg);
+   background-size: cover;
+   background-position: center;
+   border-radius: 0.3rem;
+   cursor: pointer;
+   transition: all 1s ease;
+   filter: sepia(100%);
+   z-index: 1;
+}
+
+.quotes-wrapper .item {
+   display: flex;
+   flex-direction: column;
+   overflow: auto;
+}
+
+.quotes-wrapper .item blockquote {
+   display: inline-block;
+   color: rgb(52, 73, 94);
+   padding: 1rem 1rem 1rem 2rem;
+   font-size: 1.2rem;
+   text-align: center;
+   text-align-last: center;
+}
+
+.quotes-wrapper .item p {
+   display: inline-block;
+   font-size: 0.8rem;
+   font-style: italic;
+   color: rgb(66, 73, 73);
+   text-align: right;
+   padding-right: 1rem;
+}
+
+.quotes-card:hover {
+   filter: sepia(0);
+   transform: scale(1.2);
+   z-index: 2;
+}
+
+.footer {
+   display: flex;
+   width: 100%;
+   height: auto;
+   margin: 1.5rem auto;
+}
+
+.footer ul {
+   display: flex;
+   width: 100%;
+   height: auto;
+   justify-content: center;
+   padding: 0;
+   column-gap: 1rem;
+}
+
+.footer li {
+   display: flex;
+   height: auto;
+   min-width: 8rem;
+   border: var(--border-link);
+   box-shadow: var(--box-shadow-menu);
+   border-radius: 3rem;
+   text-align: center;
+   padding: 0.2rem;
+   margin: 0.5rem;
+   justify-content: center;
+}
+
+.footer li a {
+   width: 100%;
+   height: auto;
+}
+
+@media screen and (max-width: 1100px) {
+   * {
+      font-size: 20px;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   * {
+      font-size: 18px;
+   }
+   .container {
+      width: 100%;
+   }
+   .header > a {
+      margin-left: 1rem;
+   }
+   .contact {
+      column-gap: 1.5rem;
+      margin-right: 1rem;
+   }
+   .container-flip-card {
+      display: grid;
+      grid-template-rows: repeat(auto-fill, 16rem);
+      grid-template-columns: repeat(auto-fill, 13rem);
+      grid-auto-columns: 13rem;
+      grid-auto-rows: 16rem;
+   }
+   .quotes-wrapper {
+      width: 98%;
+   }
+   .quotes-wrapper .item blockquote {
+      font-size: 1.1rem;
+   }
+   .quotes-wrapper .item p {
+      font-size: 0.9rem;
+   }
+}
+
+@media screen and (max-width: 650px) {
+   * {
+      font-size: 16px;
+   }
+   .contact li {
+      min-width: auto;
+   }
+
+   .footer li {
+      min-width: 7rem;
+      column-gap: 0.7rem;
+   }
+}
+
+@media screen and (max-width: 550px) {
+   * {
+      font-size: 14px;
+   }
+
+   a {
+      font-size: 1rem;
+   }
+
+   .contact {
+      display: none;
+   }
+
+   .contact_mobil {
+      display: flex;
+   }
+
+   .contact_mobil li {
+      padding: 0;
+   }
+
+   .footer ul {
+      flex-direction: column;
+   }
+}
+
+@media screen and (max-width: 430px) {
+   .quotes-wrapper {
+      display: grid;
+      grid-template-rows: repeat(auto-fill, 17rem);
+      grid-template-columns: repeat(2, auto);
+      grid-auto-columns: auto;
+      grid-auto-rows: 17rem;
+   }
+}
+@media screen and (max-width: 350px) {
+   .quotes-wrapper {
+      grid-template-rows: repeat(auto-fill, 17rem);
+      grid-template-columns: repeat(1, auto);
+   }
+}
+
+@media (hover: none) and (pointer: coarse) {
+   .quotes-card:hover {
+      filter: sepia(100%);
+      transform: scale(1);
+      z-index: 0;
+   }
+}
