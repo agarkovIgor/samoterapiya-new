@@ -377,7 +377,7 @@ h1 {
 .main__description-item {
     padding-top: 65px;
     width: 80%;
-    /* max-width: 985px; */
+    max-width: 985px;
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -389,12 +389,13 @@ h1 {
 
 .main__description-item h3 {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     width: 90%;
     max-width: 886px;
     height: 60px;
     margin: 0 auto;
+    /* margin-left: 40px; */
     padding-left: 14px;
     padding-right: 14px;
     border-radius: 10px;
@@ -481,7 +482,7 @@ h1 {
 
 @keyframes scroll {
     to {
-        translate: calc(-5 * 300px);
+        translate: calc(-6 * 300px);
     }
 }
 
@@ -665,7 +666,6 @@ h1 {
 
 @media screen and (max-width: 900px) {
     .line-1-revers {
-        /* top: 1750px; */
         bottom: 1200px;
     }
 
@@ -746,7 +746,7 @@ h1 {
     }
 
     .main__description-item h3 {
-        width: 97%;
+        width: 90%;
         font-size: 1.15rem;
     }
 
@@ -754,15 +754,15 @@ h1 {
         width: 65%;
         font-size: 1.15rem;
         margin-top: 20px;
-        margin-left: 40px;
-    }
-
-    .main__description-item .item-2 {
         margin-left: 80px;
     }
 
+    .main__description-item .item-2 {
+        margin-left: 120px;
+    }
+
     .main__description-item .item-3 {
-        margin-left: 140px;
+        margin-left: 180px;
     }
 
     .main__gallery h3 {
@@ -925,7 +925,7 @@ h1 {
     }
 
     .main__description-item h3 {
-        width: 97%;
+        min-width: 90%;
         font-size: 1rem;
     }
 
@@ -935,6 +935,17 @@ h1 {
         max-width: 443px;
         font-size: 1rem;
         margin-top: 20px;
+    }
+
+    @keyframes scroll {
+        to {
+            translate: calc(-7 * 200px);
+        }
+    }
+
+    .main__gallery-photo {
+        width: 200px;
+        height: 350px;
     }
 
     .footer__info {
@@ -1223,6 +1234,10 @@ h1 {
 }
 
 @media screen and (max-width: 430px) {
+    .line-1-revers {
+        bottom: 1050px;
+    }
+
     h1 {
         font-size: 32px;
         margin-bottom: 100px;
@@ -1262,7 +1277,6 @@ h1 {
     }
 
     .subscribe-title {
-
         font-size: 1rem;
         letter-spacing: 0;
     }
