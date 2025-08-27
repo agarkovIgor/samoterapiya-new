@@ -525,7 +525,7 @@ h1 {
     position: relative;
     overflow: hidden;
 }
-
+/* блик кнопки */
 .button-telegram::after {
     content: "";
     width: 100%;
@@ -626,8 +626,23 @@ h1 {
     transition: opacity 2s;
 }
 
-.hidden {
+/* .hidden {
     display: none;
+} */
+/* анимация текста */
+.text-animation {
+    background: linear-gradient(-45deg, #000 20%, #16d9eb 70%, #000 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500px auto;
+    animation: text 6s infinite alternate;
+}
+
+@keyframes text {
+    0% {
+        background-position: 200%;
+    }
 }
 
 @media screen and (max-width: 1110px) {
