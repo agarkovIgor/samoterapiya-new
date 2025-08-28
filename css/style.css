@@ -273,6 +273,11 @@ h1 {
     margin-bottom: 160px;
 }
 
+.main-title-h1 {
+    font-size: 50px;
+    display: none;
+}
+
 .main__content {
     width: 97%;
     max-width: 1400px;

@@ -235,7 +235,6 @@ ul li {
    width: fit-content;
    max-width: 75%;
    color: #024147;
-   /* color: #1e3883; */
    font-weight: 400;
    font-size: 1.5rem;
    margin-top: 40px;
@@ -278,6 +277,18 @@ ul li {
    background: var(--button-hover-gradient);
    transform: scale(0.99);
    font-size: 0.99rem;
+}
+
+.description {
+   width: 100%;
+   padding: 20px 30px;
+   background-color: var(--section-color);
+   border-radius: 20px;
+   margin-top: 40px;
+   color: #024147;
+   font-weight: 400;
+   font-size: 1.2rem;
+   display: none;
 }
 
 /* .img-collage-mini {
