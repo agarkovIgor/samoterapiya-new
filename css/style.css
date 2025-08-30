@@ -389,7 +389,6 @@ h1 {
     max-width: 886px;
     height: 60px;
     margin: 0 auto;
-    /* margin-left: 40px; */
     padding-left: 14px;
     padding-right: 14px;
     border-radius: 10px;
@@ -648,9 +647,7 @@ h1 {
     transition: opacity 2s;
 }
 
-/* .hidden {
-    display: none;
-} */
+
 /* анимация текста */
 .text-animation {
     background: linear-gradient(-45deg, #000 20%, #16d9eb 70%, #000 80%);
