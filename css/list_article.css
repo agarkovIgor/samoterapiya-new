@@ -95,6 +95,10 @@ ul {
    z-index: 20;
 }
 
+.link {
+   border-bottom: 1px solid #00bfff;
+}
+
 .container {
    width: 97%;
    max-width: 1400px;

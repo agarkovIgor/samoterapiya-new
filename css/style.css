@@ -71,6 +71,10 @@ li {
     justify-content: center;
 }
 
+.link {
+    border-bottom: 1px solid #00bfff;
+}
+
 .line-1 {
     position: absolute;
     top: 330px;
@@ -597,6 +601,19 @@ h1 {
     width: 21%;
     max-width: 300px;
     height: auto;
+}
+
+.website-development {
+    margin: 10px 0 0 20px;
+}
+
+.website-development:last-child {
+    margin-bottom: 20px;
+}
+
+.website-development span,
+.website-development a{
+    font-size: 0.8rem;
 }
 
 .line-left {
