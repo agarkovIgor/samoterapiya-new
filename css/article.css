@@ -20,9 +20,6 @@ a {
    font-size: 0.8rem;
 }
 
-/* p {
-   font-size: 1rem;
-} */
 
 ul {
    list-style: none;
@@ -247,8 +244,8 @@ ul li {
    font-style: normal;
    font-size: 44px;
    margin-bottom: 110px;
-   padding: 10px 20px;
-   border-radius: 20px;
+   /* padding: 10px 20px;
+   border-radius: 20px; */
    /* background-color: rgba(245, 239, 239, 0.1); */
    /* background-color: rgba(255, 255, 255,0.5);
    box-shadow: 0px 0px 50px rgba(255, 255, 255,0.8);
@@ -553,13 +550,7 @@ ul li {
       height: 50px;
    }
 
-   /* .navigation a {
-      font-size: 1.2rem;
-   } */
-
-   /* .link-telegram {
-      display: none;
-   } */
+   
    .header__contact {
       display: none;
    }
@@ -633,6 +624,11 @@ ul li {
 
    .article__title {
       font-size: 18px;
+   }
+
+   .main h1 {
+      font-size: 24px;
+      max-width: 90%;
    }
 
    .main__wrapper-article {
