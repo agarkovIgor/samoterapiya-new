@@ -114,7 +114,7 @@ ul {
 
 .header {
    width: 100%;
-   max-width: 1400px;
+   /* max-width: 1400px; */
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -409,7 +409,7 @@ ul li {
 
 .footer {
    width: 100%;
-   max-width: 1400px;
+   /* max-width: 1400px; */
    height: 100%;
    display: flex;
    justify-content: space-between;

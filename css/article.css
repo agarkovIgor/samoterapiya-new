@@ -106,7 +106,7 @@ a:focus {
 
 .header {
    width: 100%;
-   max-width: 1400px;
+   /* max-width: 1400px; */
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -120,6 +120,7 @@ a:focus {
    height: 60px;
    cursor: pointer;
    position: relative;
+   margin-left: 35px;
    z-index: 150;
 }
 
@@ -132,6 +133,7 @@ a:focus {
    flex-direction: column;
    justify-content: center;
    row-gap: 10px;
+   margin-right: 35px;
 }
 
 .contact a {
@@ -405,7 +407,7 @@ ul li {
 
 .footer {
    width: 100%;
-   max-width: 1400px;
+   /* max-width: 1400px; */
    height: 100%;
    display: flex;
    justify-content: space-between;

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задать вопрос</title>
+</head>
+<body>
+  <form class="uniForm obratnuj-zvonok">
+  
+    <h3>Form 2</h3>
+  
+    <!-- Hidden Required Fields -->
+    <input type="hidden" name="project_name" value="Site Name">
+    <input type="hidden" name="admin_email" value="agarcov310781igor@gmail.com">
+    <input type="hidden" name="form_subject" value="Form Subject 2">
+    <!-- END Hidden Required Fields -->
+  
+    <div class="form-zvonok">
+      <div>
+        <label>Имя <span>*</span></label>
+        <input type='text' name='username' required>
+      </div>
+      <div>
+        <label>Номер телефона (с кодом) <span>*</span></label>
+        <input type='text' name='usernumber' required>
+      </div>
+      <div>
+        <label>Сообщение</label>
+        <input type='text' name='question'>
+      </div>
+      <label for="quest">Задайте ваш вопрос</label>
+      <textarea id="quest" rows="1"></textarea>
+      <input class="bot-send-mail" type='submit' value='Послать заявку'>
+    </div>
+  
+  </form>
+</body>
+</html>

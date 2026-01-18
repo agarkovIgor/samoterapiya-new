@@ -123,7 +123,7 @@ li {
 
 .header {
     width: 100%;
-    max-width: 1400px;
+    /* max-width: 1400px; */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -188,7 +188,7 @@ li {
     width: 50px;
     height: 50px;
     position: absolute;
-    top: auto;
+    /* top: auto; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -594,7 +594,7 @@ h1 {
 
 .footer {
     width: 100%;
-    max-width: 1400px;
+    /* max-width: 1400px; */
     height: 100%;
     min-height: 400px;
     display: flex;
@@ -621,11 +621,14 @@ h1 {
 
 .footer__sertificates {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10px;
 }
 
 .footer__sertificates img {
-    width: 21%;
+    width: 25%;
     max-width: 300px;
     height: auto;
 }
