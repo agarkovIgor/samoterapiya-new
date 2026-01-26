@@ -603,6 +603,14 @@ h1 {
     position: relative;
 }
 
+.footer__sertificates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
 @media screen and (max-width: 1400px) {
     .container-header {
         border-radius: 0 0 20px 20px;
@@ -619,13 +627,13 @@ h1 {
     padding: 60px 30px;
 }
 
-.footer__sertificates {
+/* .footer__sertificates {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 0 10px;
-}
+} */
 
 .footer__sertificates img {
     width: 25%;

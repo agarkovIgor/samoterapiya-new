@@ -2,7 +2,6 @@
    margin: 0;
    padding: 0;
    font-size: 16px;
-   /* line-height: 1.5; */
    box-sizing: border-box;
 }
 html body {
@@ -312,7 +311,11 @@ ul li {
    color: #024147;
    font-weight: 400;
    font-size: 1.2rem;
-   display: none;
+   position:absolute;
+   width: 1px;
+   height: 1px;
+   left: -1000px;
+   clip: rect(0 0 0 0);
 }
 
 /* .img-collage-mini {

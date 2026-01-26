@@ -9,10 +9,9 @@
     <link rel="icon" href="#" type="image/png" size="32*32">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Monomakh&family=Shafarik&display=swap"
-        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Monomakh&family=Shafarik&display=swap&family=Ruslan+Display&family=Montserrat:ital,wght@0,100..900;1,100..900"
+        rel="stylesheet" />
     <link rel="stylesheet" href="css/card-mood-day.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -38,420 +37,529 @@
         </script>
 </head>
 
-<body>
-    <div class="container">
-        <header class="header">
-            <a href="index.html"><img src="icon/logo.svg" alt="logo"></a>
-            <ul class="contact">
-                <li><a href="https://t.me/+cqsJl0Fe9S44NGJi" target="_blank">телеграм</a></li>
-                <li><a href="mailto:severinalilija@gmail.com">e-mail</a></li>
-            </ul>
-            <ul class="contact_mobil">
-                <li><a href="https://t.me/+cqsJl0Fe9S44NGJi"><img src="icon/telegram.png" alt="telegram"></a></li>
-                <li><a href="mailto:severinalilija@gmail.com"><img src="icon/e-mail.png" alt="e-mail"></a></li>
-            </ul>
-        </header>
-        <nav class="navigation">
-            <a href="index.html">...вернуться на главную...</a>
-        </nav>
+<div>
+    <div class="wrapper">
 
-        <main class="container-flip-card">
-            <h1 class="title">мотивация на сегодняшний день</h1>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg" alt="front">
-                    </div>
-                    <div class="background background-item1">
-                        <div>
-                            <p>Для получения нового результата – совершайте новые действия</p>
-                        </div>
-                    </div>
+        <div class="container-header">
+            <header class="header">
+                <a class="logo" href="index.html"><img src="icon/newImg-logo-1.svg" alt="логотип"></a>
+                <div class="header__contact contact">
+                    <p class="contact__mail">
+                        <span class="text-animation">написать автору:</span>
+                        <a class="link" href="mailto:severinalilija@gmail.com">severinalilija@gmail.com</a>
+                    </p>
+                    <p class="contact__telegram">
+                        <span class="text-animation">подписаться на телеграм-канал:</span><a class="link"
+                            href="https://t.me/+cqsJl0Fe9S44NGJi" target="_blank">
+                            "строим свою жизнь"</a>
+                    </p>
                 </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item2">
-                        <div>
-                            <p>Что излучаем, то и получаем</p>
-                        </div>
-                    </div>
+                <div class="contact_mobil">
+                    <a href="https://t.me/+cqsJl0Fe9S44NGJi"><img src="icon/newImg-telegramMobil.svg"
+                            alt="телеграм" /></a>
+                    <a href="mailto:severinalilija@gmail.com"><img src="icon/newImg-mailMobil.svg" alt="почта" /></a>
                 </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
+            </header>
+        </div>
+
+        <div class="container">
+
+            <nav class="navigation">
+                <img class="line-mini" src="icon/newImg-lineMiniLink-left.svg" alt="линии" />
+                <a href="index.html">вернуться на главную</a>
+                <img class="line-mini" src="icon/newImg-lineMiniLink-right.svg" alt="линии" />
+            </nav>
+
+            <main class="main">
+                <h1 class="title">мотивация на сегодняшний день</h1>
+
+                <section class="slogan-generator">
+                    <div class="slogan visible" id="slogan">
+                        <p>Нажмите кнопку и получите слоган на сегодняшний день</p>
                     </div>
-                    <div class="background background-item3">
-                        <div>
-                            <p>Решение есть всегда</p>
+                    <button type="button" class="btn" id="generate-btn">
+                        нажми здесь
+                    </button>
+                </section>
+
+                <section class="container-flip-card">
+
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg" alt="front">
+                            </div>
+                            <div class="background background-item1">
+                                <div>
+                                    <p class="slogan-item">Для получения нового результата – совершайте новые действия</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item1">
-                        <div>
-                            <p>Не соглашайтесь на меньшее</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item2">
+                                <div>
+                                    <p class="slogan-item">Что излучаем, то и получаем</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item2">
-                        <div>
-                            <p>Сфокусируйтесь на своем отношении к себе</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item3">
+                                <div>
+                                    <p class="slogan-item">Решение есть всегда</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item3">
-                        <div>
-                            <p>Нет идеала, но всегда можно стремиться к лучшему</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item1">
+                                <div>
+                                    <p class="slogan-item">Не соглашайтесь на меньшее</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item1">
-                        <div>
-                            <p>Шагайте навстречу мечте</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item2">
+                                <div>
+                                    <p class="slogan-item">Сфокусируйтесь на своем отношении к себе</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item2">
-                        <div>
-                            <p>Без действий вы не получите то, что хотите</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item3">
+                                <div>
+                                    <p class="slogan-item">Нет идеала, но всегда можно стремиться к лучшему</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item3">
-                        <div>
-                            <p>Стройте сами свою счастливую жизнь</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item1">
+                                <div>
+                                    <p class="slogan-item">Шагайте навстречу мечте</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item1">
-                        <div>
-                            <p>Улыбайтесь вопреки всем сложностям</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item2">
+                                <div>
+                                    <p class="slogan-item">Без действий вы не получите то, что хотите</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item2">
-                        <div>
-                            <p>Никто не сильнее вас на пути к себе</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item3">
+                                <div>
+                                    <p class="slogan-item">Стройте сами свою счастливую жизнь</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item3">
-                        <div>
-                            <p>Разреши себе быть успешным</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item1">
+                                <div>
+                                    <p class="slogan-item">Улыбайтесь вопреки всем сложностям</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item1">
-                        <div>
-                            <p>Не забывай замечать детали</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item2">
+                                <div>
+                                    <p class="slogan-item">Никто не сильнее вас на пути к себе</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item2">
-                        <div>
-                            <p>Одно маленькое действие сдвигает горы</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item3">
+                                <div>
+                                    <p class="slogan-item">Разреши себе быть успешным</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item3">
-                        <div>
-                            <p>Начать никогда не поздно</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item1">
+                                <div>
+                                    <p class="slogan-item">Не забывай замечать детали</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item1">
-                        <div>
-                            <p>Перестань «давить» на себя</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item2">
+                                <div>
+                                    <p class="slogan-item">Одно маленькое действие сдвигает горы</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item2">
-                        <div>
-                            <p>Позвольте себе быть разными</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item3">
+                                <div>
+                                    <p class="slogan-item">Начать никогда не поздно</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item3">
-                        <div>
-                            <p>Ты – создатель своей реальности</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item1">
+                                <div>
+                                    <p class="slogan-item">Перестань «давить» на себя</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item1">
-                        <div>
-                            <p>Сосредоточьтесь на поиске возможностей</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item2">
+                                <div>
+                                    <p class="slogan-item">Позвольте себе быть разными</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item2">
-                        <div>
-                            <p>Не стоит откладывать планы и мечты</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item3">
+                                <div>
+                                    <p class="slogan-item">Ты – создатель своей реальности</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item3">
-                        <div>
-                            <p>Время – невосполнимый ресурс</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item1">
+                                <div>
+                                    <p class="slogan-item">Сосредоточьтесь на поиске возможностей</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item1">
-                        <div>
-                            <p>Самый благоприятный день – сегодня</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item2">
+                                <div>
+                                    <p class="slogan-item">Не стоит откладывать планы и мечты</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item2">
-                        <div>
-                            <p>Каждый из нас – художник своей жизни</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item3">
+                                <div>
+                                    <p class="slogan-item">Время – невосполнимый ресурс</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item3">
-                        <div>
-                            <p>Каждый человек – уникален</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item1">
+                                <div>
+                                    <p class="slogan-item">Самый благоприятный день – сегодня</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item1">
-                        <div>
-                            <p>Реальность – отражение наших мыслей</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item2">
+                                <div>
+                                    <p class="slogan-item">Каждый из нас – художник своей жизни</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item2">
-                        <div>
-                            <p>Начните действовать, чтобы осуществить свои желания</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item3">
+                                <div>
+                                    <p class="slogan-item">Каждый человек – уникален</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item3">
-                        <div>
-                            <p>Ошибки – путь к правильным решениям</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item1">
+                                <div>
+                                    <p class="slogan-item">Реальность – отражение наших мыслей</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item1">
-                        <div>
-                            <p>Позвольте себе столкнуться с вашими страхами</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item2">
+                                <div>
+                                    <p class="slogan-item">Начните действовать, чтобы осуществить свои желания</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item2">
-                        <div>
-                            <p>Одевайтесь в счастье</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item3">
+                                <div>
+                                    <p class="slogan-item">Ошибки – путь к правильным решениям</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item3">
-                        <div>
-                            <p>Начните ценить уроки, которые можно извлечь из ошибок</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item1">
+                                <div>
+                                    <p class="slogan-item">Позвольте себе столкнуться с вашими страхами</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item3">
-                        <div>
-                            <p>Не ждите подходящего момента – создайте его сами</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item2">
+                                <div>
+                                    <p class="slogan-item">Одевайтесь в счастье</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="photocard">
-                    <div class="image">
-                        <img src="img/mood-front.jpg">
-                    </div>
-                    <div class="background background-item3">
-                        <div>
-                            <p>Лучший путь предсказать будущее – создать его</p>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item3">
+                                <div>
+                                    <p class="slogan-item">Начните ценить уроки, которые можно извлечь из ошибок</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item3">
+                                <div>
+                                    <p class="slogan-item">Не ждите подходящего момента – создайте его сами</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="photocard">
+                            <div class="image">
+                                <img src="img/mood-front.jpg">
+                            </div>
+                            <div class="background background-item3">
+                                <div>
+                                    <p class="slogan-item">Лучший путь предсказать будущее – создать его</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <div class="main__telegram-description">
+                    <h3>Обсуждения, техники, практики, тесты, общение, поддерживающее окружение и еще много интересного
+                        в телеграм-канале</h3>
+
+                    <img class="lineMax-right right" src="icon/newImg-lineMax-right.svg" alt="линия" />
+                    <img class="lineMax-left left" src="icon/newImg-lineMax-left.svg" alt="линия" />
+
+                    <img class="lineMini-right right" src="icon/newImg-lineMini-1-right.svg" alt="линия" />
+                    <img class="lineMini-left left" src="icon/newImg-lineMini-1-left.svg" alt="линия" />
                 </div>
-            </section>
-        </main>
-        <nav class="navigation">
-            <a href="index.html">...вернуться на главную...</a>
-        </nav>
-        <footer class="footer">
-            <ul>
-                <li><a href="https://t.me/+cqsJl0Fe9S44NGJi" target="_blank">телеграмм</a></li>
-                <li><a href="mailto:severinalilija@gmail.com">e-mail</a></li>
-            </ul>
-        </footer>
+                <div class="button button-telegram">
+                    <a href="https://t.me/+cqsJl0Fe9S44NGJi" target="_blank">подписаться</a>
+                </div>
+            </main>
+
+            <nav class="navigation navigation-bottom">
+                <img class="line-mini" src="icon/newImg-lineMiniLink-left.svg" alt="линии" />
+                <a href="index.html">вернуться на главную</a>
+                <img class="line-mini" src="icon/newImg-lineMiniLink-right.svg" alt="линии" />
+            </nav>
+
+        </div>
+            <div class="container-footer">
+                <footer class="footer">
+                    <h4>
+                        Агаркова Лилия, <time datetime="2025">2025</time>
+                    </h4>
+                    <h4 class="contact">
+                        <span class="text-animation">написать автору:</span>
+                        <a class="link" href="mailto:severinalilija@gmail.com">severinalilija@gmail.com</a>
+                    </h4>
+                </footer>
+            </div>
+        </div>
+
     </div>
+
+
+    <script>
+
+
+        //появление эл-тов
+        function onEntry(entry) {
+            entry.forEach(change => {
+                if (change.isIntersecting) {
+                    change.target.classList.add('show');
+                } else {
+                    change.target.classList.remove('show')
+                }
+            });
+        }
+        let options = {
+            threshold: [0.5]
+        };
+        let observer = new IntersectionObserver(onEntry, options);
+        //let elements = document.querySelectorAll(".collage");
+        let linesRight = document.querySelectorAll(".right");
+        let linesLeft = document.querySelectorAll(".left");
+
+        // for (let elm of elements) {
+        //     observer.observe(elm);
+        // }
+        for (let elem of linesRight) {
+            observer.observe(elem);
+        }
+        for (let elem of linesLeft) {
+            observer.observe(elem);
+        }
+
+
+        //генератор слоганов
+        let slogans = document.querySelectorAll('.slogan-item');
+        const sloganElement = document.querySelector('.slogan');
+
+        const loadSlogan = () => {
+            const randomIndex = Math.floor(Math.random() * slogans.length);
+            const slogan = slogans[randomIndex].textContent;
+            
+            setTimeout(() => sloganElement.innerHTML = `<p>${slogan}</p>`, 1000);
+             //setTimeout(() => sloganElement.style.color = "#0c666e", 1000);
+             setTimeout(() => sloganElement.style.fontWeight = 800, 1000);
+            
+            sloganElement.classList.remove('visible');
+            setTimeout(() => sloganElement.classList.add('visible'), 1000);
+        }
+
+        document.getElementById('generate-btn').addEventListener('click', loadSlogan);
+    
+
+    </script>
 </body>
 
 </html>
