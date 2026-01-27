@@ -183,6 +183,22 @@ ul {
    margin-bottom: 110px;
 }
 
+.description {
+   width: 100%;
+   padding: 20px 30px;
+   background-color: var(--section-color);
+   border-radius: 20px;
+   margin-top: 40px;
+   color: #024147;
+   font-weight: 400;
+   font-size: 1.2rem;
+   position:absolute;
+   width: 1px;
+   height: 1px;
+   left: -1000px;
+   clip: rect(0 0 0 0);
+}
+
 .slogan-generator {
    text-align: center;
     width: 70%;
@@ -211,7 +227,15 @@ ul {
   transition: opacity 1s ease, transform 1s ease;
 }
 
+.slogan h3 {
+   font-family: "Monomakh", system-ui;
+   font-size: 30px;
+   font-weight: 600;
+   color: #0c666e;
+}
+
 .slogan p {
+   font-family: "Monomakh", system-ui;
    font-size: 36px;
    color: #0c666e;
 }
@@ -533,6 +557,10 @@ ul {
   line-height: 1.2;
 }
 
+.slogan h3 {
+   font-size: 24px;
+}
+
 .slogan p {
    font-size: 28px;
 }
@@ -645,6 +673,10 @@ ul {
   padding: 10px;
   margin: 25px 10px;
   line-height: 1.2;
+}
+
+.slogan h3 {
+   font-size: 22px;
 }
 
 .slogan p {
